@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing service</title>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway&display=swap' rel='stylesheet'>
+    <script src='https://code.jquery.com/jquery-3.4.1.js' integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/4db72034b4.js' crossorigin='anonymous'></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+
+    <div>
+        <form action="/route" method="POST" id="formId">
+            <div>
+                <label for="sellerName">Name:</label>
+                <input type="text" name="name" id="sellerName" placeholder="Please enter your name">
+            </div>
+            <div>
+                <label for="itemName">Item:</label>
+                <input type="text" name="item" id="itemName" placeholder="Please enter your item's name">
+            </div>
+            <div>
+                <label for="itemDescription">Description:</label>
+                <input type="text" name="description" id="itemDescription" placeholder="Please describe your item">
+            </div>
+            <div>
+                <button type="submit" class=".">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="result"></div>
+    
+</body>
+</html>
